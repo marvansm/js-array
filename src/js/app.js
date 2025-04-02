@@ -252,14 +252,95 @@
 
 
 // ! Task
-let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-let b = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-let empty = []
+// let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// let b = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+// let empty = []
 
 
-for (let c = 0; c < a.length; c++) {
+// for (let c = 0; c < a.length; c++) {
 
-    empty.push(a[c] + b[c])
-}
+//     empty.push(a[c] + b[c])
+// }
 
-console.log(empty)
+// console.log(empty)
+
+
+
+
+// let a = [12, 1, 23, 123, 24, 14, 45, 564, 34, 23, "@", "%"];
+// let b = [12, 1, 223, 123, 24, 14, 435, 564, 34, 23, "@"];
+// let netice = [];
+
+// for (let i = 0; i < a.length; i++) {
+//     if (a[i] === b[i]) {
+//         netice.push(a[i],b[i])
+//     }
+
+
+// }
+// console.log(netice)
+
+
+// let a = [12, 1, 23, 123, 24, 14, 45, 564, 34, 23, "@", "%"];
+// let b = [12, 1, 223, 123, 24, 14, 435, 564, 34, 23, "@"];
+// let netice = [];
+
+// for (let i = 0; i < a.length; i++) {
+//     if (+a[i] === +b[i]) {
+//         netice.push(a[i], b[i])
+//     }
+
+
+// }
+// console.log(netice)
+
+
+
+
+
+
+// let a = [12, 1, 23, 123, 24, 14, 45, 564, 34, 23, "@", "%"];
+// let b = [12, 1, 223, 123, 24, 14, 435, 564, 34, 23, "@"];
+
+//     if (a.length === b.length) {
+//     console.log("berabedir")
+
+
+// }else{
+//     console.log("deyil");
+
+// }
+
+
+
+
+
+// let a = [12, 1, 23, 123, 24, 14, 45, 564, 34, 23, "@", "%"];
+// let b = [12, 1, 223, 123, 24, 14, 435, 564, 34, 23, "@"];
+// let netice = [];
+
+// for (let i = 0; i < a.length; i++) {
+//     if (a[0] === b[0]) {
+//         console.log("beraberdir")
+//     } else {
+//         console.log("deyil")
+//     }
+
+
+// }
+
+
+
+
+// let a = [12, 1, 23, 123, 24, 14, 45, 564, 34, 23, "@", "%", 99];
+// let b = [12, 1, 223, 123, 24, 14, 435, 564, 34, 23, "@", 99];
+// let netice = [];
+
+// let cem = (a[a.length - 1] + b[b.length - 1])
+// if (cem % 2 == 1) {
+//     console.log("tek");
+
+// } else {
+//     console.log("cut");
+
+// }
