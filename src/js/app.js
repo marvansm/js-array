@@ -344,3 +344,43 @@
 //     console.log("cut");
 
 // }
+
+//! ------------------------task--------------
+
+//! 1.
+
+
+// let a = [1, 2, 3, 4, 5, 6, 7];
+// let b = [4, 5, 6, 7, 8, 9, 2];
+// let SameElements = [];
+
+// SameElements = a.filter(num => b.includes(num));
+
+
+// for (let i = 0; i < SameElements.length; i++) {
+//     if (SameElements[i] % 2 === 0) {
+//         console.log(SameElements[i], "cutdur")
+//     } else {
+//         console.log(SameElements[i], "tekdir")
+//     }
+
+// }
+
+//! 2.
+
+let minus = [0, 2, 4, 5, 7, -1, -4, -5, -20, -6, -100, -98, -12]
+
+let Empty = []
+
+for (let i = 0; i < minus.length; i++) {
+    if (minus[i] < 0) {
+        Empty.push(minus[i])
+    }
+}
+Empty.sort((a, b) => b - a)
+console.log(Empty)
+
+
+
+
+
