@@ -44,11 +44,11 @@ class animalsCategory {
         if (this.name === "lion") {
             console.log(this.type = "wild")
         } else if (this.name === "cat") {
-            console.log("Africa")
+            console.log(this.type = "Domestic")
         } else if (this.name === "shark") {
             console.log(this.type = "Water Animal")
         } else {
-            console.log ("Other Animal")
+            console.log("Other Animal")
         }
     }
 
@@ -59,8 +59,8 @@ class animalsCategory {
 
 
 let category = new animalsCategory("lion", "wild");
-let category2 = new animalsCategory("cat","Domestic");
-let category3 = new animalsCategory("shark","Water Animal");
+let category2 = new animalsCategory("cat", "Domestic");
+let category3 = new animalsCategory("shark", "Water Animal");
 
 category.categoryanimal()
 category2.categoryanimal()
