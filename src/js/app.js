@@ -1,67 +1,37 @@
+const mixButton = document.querySelector(".mix")
+const result = document.querySelector(".result")
+const cardBody = document.querySelector(".card-body")
+function randomColor() {
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    let colorArr = ["rgb(", r, ", ", g, ", ", b, ")"].reduce((a, b) => a + b)
+    result.innerHTML = colorArr;
 
-// function butunMelumatlar(ad, soyad, yas, is) {
-//     this.ad = ad
-//     this.soyad = soyad
-//     this.yas = yas
-//     this.is = is
-//     this.butunMelumatlar = function () {
-//         console.log(this.ad, this.soyad, this.yas, this.is)
-//     }
+    document.querySelector(".card-body").style.backgroundColor = colorArr;
+    console.log(colorArr)
+} 
+
+mixButton.addEventListener('click', randomColor)
+
+
+// const mixButton = document.querySelectorAll(".mix");
+// const result = document.querySelectorAll(".result");
+// const cardBody = document.querySelectorAll(".card-body");
+
+// function randomColor(index) {
+//     let r = Math.floor(Math.random() * 256);
+//     let g = Math.floor(Math.random() * 256);
+//     let b = Math.floor(Math.random() * 256);
+//     let colorArr = "rgb(" + r + ", " + g + ", " + b + ")";
+
+//     result[index].innerHTML = colorArr;
+//     cardBody[index].style.backgroundColor = colorArr;
+
+//     console.log(colorArr);
 // }
 
-// let user = new butunMelumatlar("Mervan", "Memmedli", 23, "telebe")
+// mixButton.forEach((button, index) => {
+//     button.addEventListener('click', () => randomColor(index));
+// });
 
-// user.butunMelumatlar ();
-
-
-class animals {
-    constructor(name, age) {
-        this.name = name
-        this.age = age
-
-    }
-    typeanimal() {
-        if (this.name === "lion") {
-            console.log("sir hemmise sirdir")
-        } else {
-            console.log(this.name)
-        }
-    }
-}
-let animal = new animals("monkey");
-
-animal.typeanimal();
-
-
-class animalsCategory {
-    constructor(name, type) {
-        this.type = type
-        this.name = name
-
-
-    }
-    categoryanimal() {
-        if (this.name === "lion") {
-            console.log(this.type = "wild")
-        } else if (this.name === "cat") {
-            console.log(this.type = "Domestic")
-        } else if (this.name === "shark") {
-            console.log(this.type = "Water Animal")
-        } else {
-            console.log("Other Animal")
-        }
-    }
-
-
-
-
-}
-
-
-let category = new animalsCategory("lion", "wild");
-let category2 = new animalsCategory("cat", "Domestic");
-let category3 = new animalsCategory("shark", "Water Animal");
-
-category.categoryanimal()
-category2.categoryanimal()
-category3.categoryanimal()

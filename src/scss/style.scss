@@ -1,14 +1,25 @@
-.calc {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+@import "../scss/base/reset";
 
-    .deyer {
-        justify-content: center;
+#mixer {
+    margin-top: 100px;
+
+    .card-body {
         display: flex;
-        gap: 10px;
+        flex-direction: column;
+        gap: 20px;
         align-items: center;
+        justify-content: center;
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            color: red;
+
+        }
     }
 }
